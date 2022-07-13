@@ -68,9 +68,9 @@ function showInformation() {
     .then((response) => response.json())
     .then((weather) => {
       document.getElementById("temperature").innerText =
-        "Температура: " + Math.round(weather.main.temp - 273) + " C";
+        "Температура за окном: " + Math.round(weather.main.temp - 273) + " C";
       document.getElementById("pressure").innerText =
-        "Давление: " +
+        "Атмосферное давление: " +
         Math.round(weather.main.pressure / 1.333) +
         " мм.рт.ст";
     });
@@ -80,13 +80,13 @@ function showInformation() {
     .then((response) => response.json())
     .then((pollution) => {
       document.getElementById("co").innerHTML =
-        "CO: " + pollution.list[0].components.co + " μg/m3";
+        "Уровень CO: " + pollution.list[0].components.co + " μg/m3";
       document.getElementById("no").innerHTML =
-        "NO: " + pollution.list[0].components.no + " μg/m3";
+        "Уровень NO: " + pollution.list[0].components.no + " μg/m3";
       document.getElementById("no2").innerText =
-        "NO2: " + pollution.list[0].components.no2 + " μg/m3";
+        "Уровень NO2: " + pollution.list[0].components.no2 + " μg/m3";
       document.getElementById("so2").innerText =
-        "SO2: " + pollution.list[0].components.so2 + " μg/m3";
+        "Уровень SO2: " + pollution.list[0].components.so2 + " μg/m3";
     });
 
 }

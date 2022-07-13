@@ -5,41 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
-    <title>Экологическая обстановка</title>
+    <title>Городское компостирование</title>
 </head>
 
 <body>
     <header class="header">
-        <div class="nav-color">
-            <nav class="nav container">
-                <div class="nav__logo">
-                    <img src="./assets/img/header/logo.png" alt="logo">
-                </div>
-                <div class="nav__links">
-                    <a href="#news">НОВОСТИ</a>
-                    <a href="#list">КАРТА</a>
-                    <a href="#">ЕЩЕ</a>
-                </div>
-                <div class="nav__button">
-                    <button class="button-registration" onclick="signUp()">РЕГИСТРАЦИЯ</button>
-                </div>
-            </nav>
+        <div class="logo">
+            <img src="logo.png" alt="logo" width="100px">
         </div>
-        <div class="header__title-bgpict">
-            <div class="header__title container">
-                <div class="header__title-text">
-                    <h1>ГОРОДСКОЕ КОМПОСТИРОВАНИЕ</h1>
-                    <h2></h2>
-                    <p></p>
-
-                </div>
-            </div>
+        <div class="links">
+            <a href="#aboutUs">О НАС</a>
+            <a href="#news">НОВОСТИ</a>
+            <a href="#contacts">КОНТАКТЫ</a>
+        </div>
+        <div class="socialNetworks">
+            <a href=""><img src="vk.png" alt="VK" class="socialNetworks__icon"></a>
+            <a href=""><img src="telegram.png" alt="Telegram" class="socialNetworks__icon"></a>
         </div>
     </header>
 
-    <div class="container-news">
+    <div class="container">
+        <div class="header__title">
+            <h1>ГОРОДСКОЕ КОМПОСТИРОВАНИЕ</h1>
+            <p>Сбор органических отходов в вашем районе</p>
+        </div>
         <article>
             <div id="list"><span class="chose-city">Выберите город:</span>
                 <select id="choice" onchange="chooseCity()">
@@ -56,10 +48,8 @@
                     <option value="Ufa">Уфа</option>
                 </select>
             </div><br>
-            <div class="container-data">
+            <div class="container__data">
                 <section class="weather">
-                    <div id="latitude"></div>
-                    <div id="longitude"></div>
                     <div id="temperature"></div>
                     <div id="pressure"></div>
                 </section><br>
@@ -71,9 +61,36 @@
                 </section>
             </div>
         </article>
-
+        <div>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex
+                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit
+                anim id est laborum</p>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex
+                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit
+                anim id est laborum</p>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex
+                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit
+                anim id est laborum</p>
+        </div>
         <footer class="footer">
-            Создано командой "BUGbusters" 2022
+            <a href="#aboutUs">О НАС</a>
+            <a href="#news">НОВОСТИ</a>
+            <a href="#contacts">КОНТАКТЫ</a>
         </footer>
 
         <script src="registration.js"></script>

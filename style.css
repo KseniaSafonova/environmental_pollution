@@ -1,0 +1,49 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid red;
+  background-color: #B3DE81;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+  color: #265C00;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.logo {
+  border: 1px solid red;
+}
+
+.links {
+  border: 1px solid red;
+}
+
+.socialNetworks {
+  border: 1px solid red;
+}
+
+.header__title {
+  border: 1px solid red;
+  background-color: #B3DE81;
+  color: #265C00;
+}
+
+.container {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.socialNetworks__icon {
+  width: 30px;
+}
+
+.footer {
+  background-color: #B3DE81;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*# sourceMappingURL=style.css.map */
