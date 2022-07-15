@@ -6,7 +6,7 @@ $white: #FDFFFF;
 
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     border: 1px solid red;
     background-color: $lightgreeen;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -25,13 +25,28 @@ a {
 
 .links {
     border: 1px solid red;
+    margin-top: 30px;
+
 }
+
+.menu {
+    border: 2px solid $darkgreen;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
 
 .socialNetworks {
     border: 1px solid red;
+    margin-top: 30px;
 }
 
-.header__title {
+.socialNetworks__icon {
+    width: 30px;
+}
+
+.container__title {
     border: 1px solid red;
     background-color: $lightgreeen;
     color: $darkgreen;
@@ -40,13 +55,18 @@ a {
 
 .container {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: $white;
+    color: $darkgreen;
 }
 
-.socialNetworks__icon {
-    width: 30px;
+
+article {
+    margin-top: 20px;
 }
 
-
+.cityMap {
+    margin-top: 20px;
+}
 
 .footer {
     background-color: $lightgreeen;

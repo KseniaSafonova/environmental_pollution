@@ -2,9 +2,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   border: 1px solid red;
   background-color: #B3DE81;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -22,13 +21,25 @@ a {
 
 .links {
   border: 1px solid red;
+  margin-top: 30px;
+}
+
+.menu {
+  border: 2px solid #265C00;
+  border-radius: 10px;
+  padding: 5px;
 }
 
 .socialNetworks {
   border: 1px solid red;
+  margin-top: 30px;
 }
 
-.header__title {
+.socialNetworks__icon {
+  width: 30px;
+}
+
+.container__title {
   border: 1px solid red;
   background-color: #B3DE81;
   color: #265C00;
@@ -36,10 +47,16 @@ a {
 
 .container {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #FDFFFF;
+  color: #265C00;
 }
 
-.socialNetworks__icon {
-  width: 30px;
+article {
+  margin-top: 20px;
+}
+
+.cityMap {
+  margin-top: 20px;
 }
 
 .footer {

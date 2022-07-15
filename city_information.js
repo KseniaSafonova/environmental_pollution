@@ -67,8 +67,8 @@ function showInformation() {
   )
     .then((response) => response.json())
     .then((weather) => {
-      document.getElementById("temperature").innerText =
-        "Температура за окном: " + Math.round(weather.main.temp - 273) + " C";
+      document.getElementById("temperature").innerHTML =
+        "Температура за окном: " + Math.round(weather.main.temp - 273) + ` <sup>o</sup>` + "C";
       document.getElementById("pressure").innerText =
         "Атмосферное давление: " +
         Math.round(weather.main.pressure / 1.333) +
@@ -80,14 +80,52 @@ function showInformation() {
     .then((response) => response.json())
     .then((pollution) => {
       document.getElementById("co").innerHTML =
-        "Уровень CO: " + pollution.list[0].components.co + " μg/m3";
+        "Уровень CO: " + pollution.list[0].components.co + " μg/m" + `<sup>3</sup>`;
       document.getElementById("no").innerHTML =
-        "Уровень NO: " + pollution.list[0].components.no + " μg/m3";
-      document.getElementById("no2").innerText =
-        "Уровень NO2: " + pollution.list[0].components.no2 + " μg/m3";
-      document.getElementById("so2").innerText =
-        "Уровень SO2: " + pollution.list[0].components.so2 + " μg/m3";
+        "Уровень NO: " + pollution.list[0].components.no + " μg/m" + `<sup>3</sup>`;
+      document.getElementById("no2").innerHTML =
+        "Уровень NO" + `<sub>2</sub>: ` + pollution.list[0].components.no2 + " μg/m" + `<sup>3</sup>`;
+      document.getElementById("so2").innerHTML =
+        "Уровень SO" + `<sub>2</sub>: ` + pollution.list[0].components.so2 + " μg/m" + `<sup>3</sup>`;
     });
+
+
+
+}
+
+function showMap() {
+  switch (document.getElementById("choice").value) {
+    case "Moscow":
+      document.getElementById('map').innerHTML = `<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d241660.81640145252!2d37.651910500619024!3d55.75514154136488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1657881349707!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`
+      break;
+    case "Saint_Petersburg":
+      document.getElementById('map').innerHTML = `<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d214932.51131001388!2d30.308034805991582!3d59.96749131982463!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1657881305263!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`
+      break;
+    case "Novosibirsk":
+      document.getElementById('map').innerHTML = `<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d146344.90049979926!2d82.92088584840468!3d55.032017552688195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1657881703877!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`
+      break;
+    case "Yekaterinburg":
+      document.getElementById('map').innerHTML = `<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d139706.5891902878!2d60.583397846691526!3d56.83023968625002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1657881773789!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`
+      break;
+    case "Kazan":
+      document.getElementById('map').innerHTML = `<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d120645.94677566538!2d49.107183230242256!3d55.81466504034507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1657881829556!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`
+      break;
+    case "Nizhny_Novgorod":
+      document.getElementById('map').innerHTML = `<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d115752.2307930215!2d43.93746803053951!3d56.29776065693892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1657881882524!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`
+      break;
+    case "Chelyabinsk":
+      document.getElementById('map').innerHTML = `<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d206339.9127220473!2d61.48256517920337!3d55.15255813847775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1657881945276!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`
+      break;
+    case "Samara":
+      document.getElementById('map').innerHTML = `<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d76425.47581275052!2d50.25952086950693!3d53.230468817513504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1657882000875!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`
+      break;
+    case "Rostov-on-Don":
+      document.getElementById('map').innerHTML = `<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d86649.90770053309!2d39.710965392842056!3d47.25942710593538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1657882069576!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`
+      break;
+    case "Ufa":
+      document.getElementById('map').innerHTML = `<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d131171.92563805336!2d56.03097027150798!3d54.78779242697891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1657882135594!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`
+      break;
+  }
 
 }
 
