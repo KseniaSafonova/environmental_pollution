@@ -32,9 +32,12 @@
             <h1>ГОРОДСКОЕ КОМПОСТИРОВАНИЕ</h1>
             <p>Пункты приёма органических отходов в вашем городе</p>
         </div>
-        <article>
+        <div>
+            <img src="titleImg.jpg" alt="Title" id="titleImg">
+        </div>
+        <section>
             <div id="list"><span class="chose-city">Выберите ваш город:</span>
-                <select id="choice" onchange="chooseCity(), showMap()">
+                <select id="choice" onchange="chooseCity()">
                     <option>...</option>
                     <option value="Moscow">Москва</option>
                     <option value="Saint_Petersburg">Санкт-Петербург</option>
@@ -63,33 +66,8 @@
                     <div id="map"></div>
                 </section>
             </div>
-        </article>
-        <div>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex
-                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit
-                anim id est laborum</p>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex
-                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit
-                anim id est laborum</p>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex
-                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit
-                anim id est laborum</p>
-        </div>
+        </section>
+
         <footer class="footer">
             <a href="#aboutUs">О НАС</a>
             <a href="#news">НОВОСТИ</a>
