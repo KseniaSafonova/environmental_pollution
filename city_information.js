@@ -1,14 +1,14 @@
 let citiesJson = `[
-  { "id": 0, "city": "Moscow", "latitude": 55.44, "longitude": 37.36, "collectedOrganic2022" : "[2, 2.7, 3.1, 3.5, 3.6, 4.3, 4.4]" },
-  { "id": 1, "city": "Saint_Petersburg", "latitude": 59.57, "longitude": 30.19, "collectedOrganic2022" : "[1.5, 2, 3.1, 3.4, 4, 4.2, 4.2]"},
-  { "id": 2, "city": "Novosibirsk", "latitude": 55.03, "longitude": 82.56, "collectedOrganic2022" : "[1.3, 1.7, 2.1, 2.5, 3, 3.3, 3.8]"},
-  { "id": 3, "city": "Yekaterinburg", "latitude": 56.50, "longitude": 60.36, "collectedOrganic2022" : "[1.3, 2, 2.1, 2.5, 3, 3.1, 3.4]"},
-  { "id": 4, "city": "Kazan", "latitude": 55.47, "longitude": 49.06, "collectedOrganic2022" : "[1.2, 1.7, 2, 2.5, 3.1, 3.3, 3.5]"},
-  { "id": 5, "city": "Nizhny_Novgorod", "latitude": 56.19, "longitude": 44.00, "collectedOrganic2022" : "[1, 1.5, 2, 2.1, 2.5, 3, 3.2]"},
-  { "id": 6, "city": "Chelyabinsk", "latitude": 55.09, "longitude": 61.22, "collectedOrganic2022" : "[1.3, 1.7, 2.1, 2.5, 3, 3.3, 3.8]"},
-  { "id": 7, "city": "Samara", "latitude": 53.12, "longitude": 50.08, "collectedOrganic2022" : "[1.2, 1.5, 2.1, 2.4, 3.3, 3.5, 3.7]"},
-  { "id": 8, "city": "Rostov-on-Don", "latitude": 47.14, "longitude": 39.42, "collectedOrganic2022" : "[1.5, 1.7, 2.5, 2.7, 3.2, 3.5, 3.9]"},
-  { "id": 9, "city": "Ufa", "latitude": 54.43, "longitude": 55.56, "collectedOrganic2022" : "[1, 1.7, 2.2, 2.5, 3, 3.1, 3.3]"}
+  { "id": 0, "city": "Moscow", "latitude": 55.44, "longitude": 37.36, "collectedOrganic2022" : [2, 2.7, 3.1, 3.5, 3.6, 4.3, 4.4] },
+  { "id": 1, "city": "Saint_Petersburg", "latitude": 59.57, "longitude": 30.19, "collectedOrganic2022" : [1.5, 2, 3.1, 3.4, 4, 4.2, 4.2]},
+  { "id": 2, "city": "Novosibirsk", "latitude": 55.03, "longitude": 82.56, "collectedOrganic2022" : [1.3, 1.7, 2.1, 2.5, 3, 3.3, 3.8]},
+  { "id": 3, "city": "Yekaterinburg", "latitude": 56.50, "longitude": 60.36, "collectedOrganic2022" : [1.3, 2, 2.1, 2.5, 3, 3.1, 3.4]},
+  { "id": 4, "city": "Kazan", "latitude": 55.47, "longitude": 49.06, "collectedOrganic2022" : [1.2, 1.7, 2, 2.5, 3.1, 3.3, 3.5]},
+  { "id": 5, "city": "Nizhny_Novgorod", "latitude": 56.19, "longitude": 44.00, "collectedOrganic2022" : [1, 1.5, 2, 2.1, 2.5, 3, 3.2]},
+  { "id": 6, "city": "Chelyabinsk", "latitude": 55.09, "longitude": 61.22, "collectedOrganic2022" : [1.3, 1.7, 2.1, 2.5, 3, 3.3, 3.8]},
+  { "id": 7, "city": "Samara", "latitude": 53.12, "longitude": 50.08, "collectedOrganic2022" : [1.2, 1.5, 2.1, 2.4, 3.3, 3.5, 3.7]},
+  { "id": 8, "city": "Rostov-on-Don", "latitude": 47.14, "longitude": 39.42, "collectedOrganic2022" : [1.5, 1.7, 2.5, 2.7, 3.2, 3.5, 3.9]},
+  { "id": 9, "city": "Ufa", "latitude": 54.43, "longitude": 55.56, "collectedOrganic2022" : [1, 1.7, 2.2, 2.5, 3, 3.1, 3.3]}
 ]`
 
 let cities = JSON.parse(citiesJson);
@@ -99,6 +99,7 @@ function showInformation() {
         "Уровень SO" + `<sub>2</sub>: ` + pollution.list[0].components.so2 + " μg/m" + `<sup>3</sup>`;
     });
 
-  console.log(JSON.parse(citiesJson)); //доделать график сбора
+  console.log(cities[5].collectedOrganic2022)
+  //доделать график сбора
 
 }
