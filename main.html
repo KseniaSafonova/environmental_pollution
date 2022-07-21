@@ -66,10 +66,7 @@
                     <div id="map"></div>
                 </section>
                 <section>
-                    <div id="statistics"></div>
-                </section>
-                <section>
-                    <div id="myChart"></div>
+                    <canvas id="statistics"></canvas>
                 </section>
             </div>
         </section>
@@ -79,64 +76,8 @@
             <a href="#news">НОВОСТИ</a>
             <a href="#contacts">КОНТАКТЫ</a>
         </footer>
-
-
-
         <script src="registration.js"></script>
-        <script src="main.js"></script>
-        <script src="city_information.js"></script>
-        <!-- <script>
-            const statistics = {
-                labels: ['1', '2', '3', '4', '5', '6'],
-                datasets: [{
-                    label: '...',
-                    backgroundColor: 'rgba(203, 248, 245, 1)',
-                    data: [10, 9, 8, 7, 6, 5]
-                }]
-            };
-            const statisticConfig = {
-                type: 'bar',
-                data: statistics
-            };
-
-            let myStatistics = new Chart(
-                document.getElementById('statistics'),
-                statisticConfig
-            );
-        </script> -->
-        <script src="path/to/chartjs/dist/chart.js"></script>
-        <script>
-            const labels = [
-                'January',
-                'February',
-                'March',
-                'April',
-                'May',
-                'June',
-            ];
-
-            const data = {
-                labels: labels,
-                datasets: [{
-                    label: 'My First dataset',
-                    backgroundColor: 'rgb(255, 99, 132)',
-                    borderColor: 'rgb(255, 99, 132)',
-                    data: [0, 10, 5, 2, 20, 30, 45],
-                }]
-            };
-
-            const config = {
-                type: 'line',
-                data: data,
-                options: {}
-            };
-        </script>
-        <script>
-            const myChart = new Chart(
-                document.getElementById('myChart'),
-                config
-            );
-        </script>
+        <script src="bundle.js"></script>
 </body>
 
 </html>
