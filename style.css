@@ -7,7 +7,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid red;
+  border-bottom: 2px solid #265C00;
   background-color: #B3DE81;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -40,7 +40,7 @@ a {
 }
 
 .container__title {
-  border: 1px solid red;
+  border: 1px solid #B3DE81;
   background-color: #B3DE81;
   color: #265C00;
 }
