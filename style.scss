@@ -19,6 +19,10 @@ a {
     font-weight: bolder;
 }
 
+.logo {
+    margin: 10px 0px;
+}
+
 .menu {
     border: 2px solid $darkgreen;
     border-radius: 10px;
@@ -52,18 +56,41 @@ a {
     color: $darkgreen;
 }
 
-section {
-    margin-top: 30px;
+.mainSection {
+    padding-top: 30px;
     text-align: center;
     font-size: large;
     margin-bottom: 20px;
+}
+
+#point {
+    padding-top: 40px;
+}
+
+.container__data {
+    margin-top: 10px;
+}
+
+.pollution {
+    margin-top: 10px;
 }
 
 .cityMap {
     margin-top: 20px;
 }
 
+.statistics {
+    width: 60%;
+    margin: auto;
+}
+
 .footer {
+    display: grid;
+    row-gap: 10px;
     background-color: $lightgreen;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 20px;
+    font-weight: bolder;
+
 }
