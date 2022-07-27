@@ -28,11 +28,11 @@ a {
     border-radius: 10px;
     padding: 5px;
     margin: 20px;
-}
 
-.menu:hover {
-    border: 2px solid $green;
-    color: $white;
+    &:hover {
+        border: 2px solid $green;
+        color: $white;
+    }
 }
 
 .socialNetworks__icon {
@@ -48,6 +48,7 @@ a {
     border: 1px solid $lightgreen;
     background-color: $lightgreen;
     color: $darkgreen;
+    padding-left: 20px;
 }
 
 .container {
@@ -56,27 +57,22 @@ a {
     color: $darkgreen;
 }
 
-.mainSection {
+.container__main {
     padding-top: 30px;
     text-align: center;
     font-size: large;
     margin-bottom: 20px;
 }
 
-#point {
-    padding-top: 40px;
+#choice {
+    border: 2px solid $darkgreen;
+    border-radius: 5px;
 }
 
-.container__data {
-    margin-top: 10px;
-}
-
-.pollution {
-    margin-top: 10px;
-}
-
+.container__data,
+.pollution,
 .cityMap {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .statistics {
@@ -84,13 +80,15 @@ a {
     margin: auto;
 }
 
+#point {}
+
 .footer {
     display: grid;
     row-gap: 10px;
     background-color: $lightgreen;
+    color: $darkgreen;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     padding: 20px;
     font-weight: bolder;
-
 }

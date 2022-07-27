@@ -17,7 +17,7 @@
             <img src="logo.png" alt="logo" width="100px">
         </div>
         <div class="links">
-            <a href="#aboutUs" class="menu">О НАС</a>
+            <a href="#main" class="menu">О НАС</a>
             <a href="#news" class="menu">НОВОСТИ</a>
             <a href="#contacts" class="menu">КОНТАКТЫ</a>
         </div>
@@ -27,16 +27,16 @@
         </div>
     </header>
 
-    <div class="container">
+    <main class="container">
         <div class="container__title">
             <h1>ГОРОДСКОЕ КОМПОСТИРОВАНИЕ</h1>
             <p>Пункты приёма органических отходов в вашем городе</p>
         </div>
-        <div>
+        <div class="container__image">
             <img src="titleImg.jpg" alt="Title" id="titleImg">
         </div>
-        <section class="mainSection">
-            <div id="list"><span class="chose-city">Выберите ваш город:</span>
+        <article class="container__main">
+            <div><span>Выберите ваш город:</span>
                 <select id="choice" onchange="chooseCity()">
                     <option>...</option>
                     <option value="Moscow">Москва</option>
@@ -51,40 +51,40 @@
                     <option value="Ufa">Уфа</option>
                 </select>
             </div>
-            <!-- <div id="point"></div> -->
+            <!-- <div id="point"><img src="point.png" alt=""></div> -->
             <div class="container__data">
-                <section class="weather">
+                <div class="weather">
                     <div id="temperature"></div>
                     <div id="pressure"></div>
-                </section>
-                <section class="pollution">
+                </div>
+                <div class="pollution">
                     <div id="co"></div>
                     <div id="no"></div>
                     <div id="no2"></div>
                     <div id="so2"></div>
-                </section>
-                <section class="cityMap">
+                </div>
+                <div class="cityMap">
                     <div id="map"></div>
-                </section>
-                <section class="statistics">
+                </div>
+                <div class="statistics">
                     <p id="statisticsInfo"></p>
                     <canvas id="statistics"></canvas>
-                </section>
-            </div>
-        </section>
+                </div>
+        </article>
+    </main>
 
-        <footer class="footer">
-            <div>НАШИ КОНТАКТЫ</div>
-            <div>+7 000 123 45 67</div>
-            <div>collectedorganic@gmail.com</div>
+    <footer class="footer">
+        <div>НАШИ КОНТАКТЫ</div>
+        <div>+7 123 456 78 90</div>
+        <div>collectedorganic@gmail.com</div>
 
-            <div class="socialNetworks">
-                <a href="#"><img src="vk.png" alt="VK" class="socialNetworks__icon"></a>
-                <a href="#"><img src="telegram.png" alt="Telegram" class="socialNetworks__icon"></a>
-            </div>
-        </footer>
-        <script src="registration.js"></script>
-        <script src="bundle.js"></script>
+        <div class="socialNetworks">
+            <a href="#"><img src="vk.png" alt="VK" class="socialNetworks__icon"></a>
+            <a href="#"><img src="telegram.png" alt="Telegram" class="socialNetworks__icon"></a>
+        </div>
+    </footer>
+    <script src="registration.js"></script>
+    <script src="bundle.js"></script>
 </body>
 
 </html>

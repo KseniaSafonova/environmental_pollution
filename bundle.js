@@ -22,7 +22,6 @@ let arrayData;
 let arraySum;
 let myStatistics = null;
 
-// document.getElementById('point').innerHTML = '<img src="point.png">';
 
 global.chooseCity = function () {
 
@@ -98,8 +97,9 @@ global.chooseCity = function () {
             document.getElementById('map').innerHTML = `<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d131171.92563805336!2d56.03097027150798!3d54.78779242697891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1657882135594!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`
             break;
     }
-    // document.getElementById('point').innerHTML = '';
+
     showInformation();
+    document.getElementById('point').innerHTML = '';
 }
 
 function showInformation() {

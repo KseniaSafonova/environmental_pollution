@@ -47,6 +47,7 @@ a {
   border: 1px solid #B3DE81;
   background-color: #B3DE81;
   color: #265C00;
+  padding-left: 20px;
 }
 
 .container {
@@ -55,27 +56,22 @@ a {
   color: #265C00;
 }
 
-.mainSection {
+.container__main {
   padding-top: 30px;
   text-align: center;
   font-size: large;
   margin-bottom: 20px;
 }
 
-#point {
-  padding-top: 40px;
+#choice {
+  border: 2px solid #265C00;
+  border-radius: 5px;
 }
 
-.container__data {
-  margin-top: 10px;
-}
-
-.pollution {
-  margin-top: 10px;
-}
-
+.container__data,
+.pollution,
 .cityMap {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .statistics {
@@ -88,6 +84,7 @@ a {
   display: grid;
   row-gap: 10px;
   background-color: #B3DE81;
+  color: #265C00;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   padding: 20px;
